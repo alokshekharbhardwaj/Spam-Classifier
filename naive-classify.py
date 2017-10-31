@@ -20,7 +20,7 @@ def get_messages(folder):
         path = folder + "/" + filename
         
         # Read files, and ignore unknown
-        with open(path, encoding=encoding, errors="ignore") as message_file:
+        with open(path, encoding=encoding, ERRORS="ignore") as message_file:
         # Added message to dict of messages.
         
             messages[filename] = message_file.read()
